@@ -1,9 +1,7 @@
-<custom-style>
-    <!-- This is where your App's styling should go. You can use .css files too. -->
-    <style>
-        .main-layout {
-            padding: 20px;
-        }
+<link rel="import" href="../bower_components/vaadin-charts/vaadin-chart-default-theme.html">
 
-    </style>
-</custom-style>
+<dom-module id="shared-styles" theme-for="vaadin-chart">
+    <template>
+        <style include="vaadin-chart-default-theme"></style>
+    </template>
+</dom-module>

@@ -1,0 +1,25 @@
+<!--This is not necessary. Just for illustration. -->
+<link rel="import" href="bower_components/polymer/polymer-element.html">
+
+<dom-module id="thin-container">
+    <template>
+        <style>
+            :host {
+                --my-custom-width-min: 1px;
+                --my-custom-width-max: 3px;
+            }
+        </style>
+
+        <slot></slot>
+    </template>
+
+    <script>
+      class ThinContainer extends Polymer.Element {
+        static get is() {
+          return 'thin-container'
+        }
+      }
+
+      customElements.define(ThinContainer.is, ThinContainer);
+    </script>
+</dom-module>
