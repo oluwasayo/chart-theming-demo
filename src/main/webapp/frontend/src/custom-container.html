@@ -5,7 +5,7 @@
   <template>
     <style include="vaadin-charts-default-theme">
       .highcharts-graph {
-        animation: breathe 4s ease-out infinite;
+        animation: breathe var(--period, 4s) ease-out infinite;
       }
 
       @keyframes breathe {
